@@ -1,0 +1,13 @@
+﻿@page "/parameters"
+
+<h1>Parameters</h1>
+
+<PeopleComponent IncluirDatosAdicionales="@DatosAdcionales"
+                 OnDatosAdicionalesChangues="OnDatosAdicionalesChangue"
+                 PersonaInfo="@PersonaInfo"></PeopleComponent>
+
+<button type="button" class="btn btn-primary"
+        @onclick="Guardar">
+    <i class="oi oi-book"></i>
+    Guardar.
+</button>
